@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
+
 		<meta charset="utf-8" />
-		<title>Polly</title>
+		<title>LiveBin</title>
 		<meta
 			name="description"
-			content="Polly makes it easy to poll your users!"
+			content="Service to easily share your clipboard."
 		/>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<header id="header">liveBin</header>
+	</br>
 		<div id="textInput">
 			<form action="create_paste.php" method="post">
-				<label for="text">Insert Text:</label><br />
-				<textarea id="text" name="text" cols="40" rows="5"></textarea
-				><br />
-				<input type="submit" value="Submit" />
+				<label id="label" for="text">Insert Text:</label><br />
+				<textarea id="text" name="text" cols="80" rows="10"></textarea>
+			</br>
+				<input id="submitButton" type="submit" value="Submit" />
 			</form>
 		</div>
 		<script src="scripts.js"></script>
