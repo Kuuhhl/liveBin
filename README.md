@@ -1,6 +1,7 @@
 # LiveBin
 
 LiveBin is a simple pastetool similar to ghostbin/pastebin.
+Adding new pastes doesn't work yet.
 
 > :warning: This tool is not secure and is vulnerable to SQL-Injection.
 
