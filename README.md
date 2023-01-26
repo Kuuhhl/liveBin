@@ -11,10 +11,7 @@ php
 sqlite3
 ```
 
-## Installation
-
--   Use any webserver like xmpp to host the site.
-
 ## Usage
 
--   Go to `https://[webadress]/main.html`
+-   Use any webserver like xmpp to host the site.
+-   Go to the URL of your webserver.
