@@ -6,6 +6,7 @@
     <title>LiveBin - New Paste</title>
     <meta name="description" content="Service to easily share your clipboard." />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="icon.png" />
 </head>
 <?php
 $content = $_POST["text"];
