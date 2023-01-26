@@ -19,6 +19,7 @@ $db->exec("INSERT INTO Paste(text) VALUES('" . $content . "');");
 
 $last_id = $db->lastInsertRowID();
 http_response_code(200);
-echo "Deine ID: " . $last_id;
+$paste_link = "https://" . $_SERVER["HTTP_HOST"] . "?id=" . $last_id;
+echo "Your paste-link: <a href='" . $paste_link . "'>" . $paste_link . "</a>";
 exit();
 ?>
