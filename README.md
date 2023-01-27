@@ -13,10 +13,8 @@ php
 sqlite3
 ```
 
-
 ## Usage
 
-1. Use any webserver (e.g. xmpp) to host the site.
-2. Visit the URL of your website.
-
-> :warning: This tool is not secure and is vulnerable to SQL-Injection.
+1. Move the database `pastes.db` to a non-public sibling folder called `private` on your webserver.
+2. Use any webserver (e.g. xmpp) to host the site.
+3. Visit the URL of your website.

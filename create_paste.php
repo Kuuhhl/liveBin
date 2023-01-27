@@ -15,8 +15,10 @@ if (is_null($content)) {
     $content = "";
 }
 
-$db = new SQLite3("pastes.db");
-$db->exec("INSERT INTO Paste(text) VALUES('" . $content . "');");
+$db = new SQLite3("../private/pastes.db");
+$stmt = $db->prepare("INSERT INTO Paste(text) VALUES(?);");
+$stmt->bindValue(1, $content, SQLITE3_TEXT);
+$stmt->execute();
 
 $last_id = $db->lastInsertRowID();
 http_response_code(200);
