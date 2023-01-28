@@ -13,7 +13,7 @@ $results = $stmt->execute();
 
 $res = array();
 while ($row = $results->fetchArray()) {
-    array_push($res, $row["text"]);
+    array_push($res, htmlspecialchars($row["text"]));
     break;
 }
 

@@ -1,7 +1,7 @@
 // get url parameters
 const queryString = window.location.search
 
-// extract form-id and password form url-parameters
+// extract form-id from url-parameters
 const formId = new URLSearchParams(queryString).get('id')
 
 // get poll questions from server

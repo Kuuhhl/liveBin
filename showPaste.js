@@ -1,14 +1,14 @@
 // get url parameters
 const queryString = window.location.search
 
-// extract form-id and password form url-parameters
+// extract form-id from url-parameters
 const formId = new URLSearchParams(queryString).get('id')
 
 // update title of site
 document.title = 'liveBin - Paste ' + formId
 
 // update header text
-document.getElementById('header').innerHTML = 'liveBin - Paste ' + formId
+document.getElementById('header').textContent = 'liveBin - Paste ' + formId
 
 // get poll questions from server
 const fetchPromise = fetch('fetch_paste.php?id=' + formId)
@@ -17,8 +17,8 @@ fetchPromise
 		return response.json()
 	})
 	.then((data) => {
-		document.getElementById('textBox').innerHTML = data
+		document.getElementById('textBox').textContent = data
 	})
 	.catch((error) => {
-		document.getElementById('textBox').innerHTML = 'Paste does not exist.'
+		document.getElementById('textBox').textContent = 'Paste does not exist.'
 	})
